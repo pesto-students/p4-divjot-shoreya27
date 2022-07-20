@@ -57,7 +57,9 @@ Following steps takes place
 2. Then raw bytes are converted to actual character using character set defined in html.
 3. Those character are meaningless to the browser until they get converted to something meaningful which are called tokens
 4. Each start tag and end tag is accounted by parser, For example, a token that represents an anchor tag will have different properties from one that represents a paragraph token.
-   ![Token](./token.png "Parsed Token")
+
+![Token](./token.png "Parsed Token")
+
 5. But tokens are then converted to nodes which act as an independent object with specific properties
 
 6. Then each nodes are linked in a kind of Tree data structure known as DOM.
@@ -67,7 +69,7 @@ DOM contruction is the first thing any browser do upon receiving a html file, if
 then DOM creation takes time
 ![DOM](./dom.png "Bytes to DOM journey")
 
-#### But what about CSS?
+### But what about CSS?
 
 While parsing **HTML FILE** parser may encounter the link tag for external **CSS** file, so it make a request to fetch CSS file.
 
@@ -76,3 +78,23 @@ Therefore the same thing happen with CSS file and browser convert CSS file to CS
 ![CSSOM](./CSSOM.png "CSS Bytes to CSSOM journey")
 
 Browser using CSSOM determines which element will have what styling affect, thanks to **CASCADE**
+
+## Render Tree
+
+1. **DOM TREE** + **CSSOM TREE** = **RENDER TREE**
+2. All elements combine with there specific styling combined together create a render tree.
+3. Browser takes each element information from render tree, plans a layout by doing calculation the exact position and size.
+4. This is called **Layout** stage, once this layout is planned then only thing left is **painting** of this layout on a browser
+
+Finally, the elements are now rendered to the screen!
+
+## But what happens when JS comes into play??
+
+1. With the use of JS we can manipulate elements value or there style.
+2. when parser encounters script tag, it haults DOM contruction until scripts gets executed.
+3. So, If JS script tag is included in head tag then DOM is not constructed as body tag is still to be parsed which is a problem and you will not get expected results of the script
+4. So **ordering** of a script matters in document
+
+![Ordering Process](./ordering.png "JS Ordering Matters")
+
+5. If we have included external script which is over the network, then due to delay in network which will eventually delay the DOM construction and overall rendering of a page.
