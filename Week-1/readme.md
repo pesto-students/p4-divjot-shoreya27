@@ -46,6 +46,33 @@
 
 ![Browser Components Architecture](./browserComponentArchitecture.png "Browser Components Architecture")
 
+### Work Of Browser
+
+1. **DNS RESOLUTION**
+
+   1. Once a user enters a url, browser reaches nearby DNS server
+   2. Get that URL converted to specific IP address
+   3. Then this IP address is hit by the browser
+
+2. **HTTP EXCHANGE**
+
+   1. Once browser knows where to go, it starts a communication using TCP protocol
+   2. This is what http exchange
+   3. Way for browser to communicate its need to server and server to reply back
+
+3. **PARSING**
+
+   1. Building DOM & CSSOM tree
+   2. Combining trees together to form render tree
+
+4. **RENDERING**
+
+   1. Layout
+   2. Painting
+
+5. **FINALISING**
+   1. user can now browse the page
+
 ### How Rendering Engine works?
 
 Rendering engine i a piece of software which actually parse the recieved
@@ -98,3 +125,9 @@ Finally, the elements are now rendered to the screen!
 ![Ordering Process](./ordering.png "JS Ordering Matters")
 
 5. If we have included external script which is over the network, then due to delay in network which will eventually delay the DOM construction and overall rendering of a page.
+
+# MAIN FLOW EXAMPLE
+
+![MAJOR FLOW](./mainflow.png "MAIN FLOW")
+
+---
