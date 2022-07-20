@@ -1,6 +1,6 @@
 # Browser & Its Working
 
-### What is a Browser?
+## What is a Browser?
 
 1. Software Application which lets user access information worldwide.
 2. Used to locate, fetch & display content on the internet which includes images, videos etc
@@ -8,7 +8,7 @@
    format.
 4. Its a rendering machine which downloads a webpage & renders it a understandable way.
 
-### Components of a Browser
+## Components of a Browser
 
 1. User-Interface
 
@@ -46,7 +46,9 @@
 
 ![Browser Components Architecture](./browserComponentArchitecture.png "Browser Components Architecture")
 
-### Work Of Browser
+## What happens when user enter a url in browser?
+
+Following steps takes place in order after a url is enter by user:
 
 1. **DNS RESOLUTION**
 
@@ -73,7 +75,7 @@
 5. **FINALISING**
    1. user can now browse the page
 
-### How Rendering Engine works?
+## How Rendering Engine works?
 
 Rendering engine i a piece of software which actually parse the recieved
 html file into a webpage with all display and understandable content
@@ -126,7 +128,7 @@ Finally, the elements are now rendered to the screen!
 
 5. If we have included external script which is over the network, then due to delay in network which will eventually delay the DOM construction and overall rendering of a page.
 
-# MAIN FLOW EXAMPLE
+## MAIN FLOW EXAMPLE
 
 ![MAJOR FLOW](./mainflow.png "MAIN FLOW")
 
