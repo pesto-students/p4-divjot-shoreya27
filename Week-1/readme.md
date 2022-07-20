@@ -45,3 +45,34 @@
    1. Used for drawing basic widgets like combo boxes.
 
 ![Browser Components Architecture](./browserComponentArchitecture.png "Browser Components Architecture")
+
+### How Rendering Engine works?
+
+Rendering engine i a piece of software which actually parse the recieved
+html file into a webpage with all display and understandable content
+
+Following steps takes place
+
+1. Html is read as a raw bytes
+2. Then raw bytes are converted to actual character using character set defined in html.
+3. Those character are meaningless to the browser until they get converted to something meaningful which are called tokens
+4. Each start tag and end tag is accounted by parser, For example, a token that represents an anchor tag will have different properties from one that represents a paragraph token.
+   ![Token](./token.png "Parsed Token")
+5. But tokens are then converted to nodes which act as an independent object with specific properties
+
+6. Then each nodes are linked in a kind of Tree data structure known as DOM.
+7. The DOM establishes the parent-child relationships, adjacent sibling relationships, etc. The relationship between every node is established in this DOM object.
+
+DOM contruction is the first thing any browser do upon receiving a html file, if file is large
+then DOM creation takes time
+![DOM](./dom.png "Bytes to DOM journey")
+
+#### But what about CSS?
+
+While parsing **HTML FILE** parser may encounter the link tag for external **CSS** file, so it make a request to fetch CSS file.
+
+Browser read CSS file in same way it does HTML file i.e through Raw Bytes which is not useful.
+Therefore the same thing happen with CSS file and browser convert CSS file to CSS Tree Data Structure called CSSOM
+![CSSOM](./CSSOM.png "CSS Bytes to CSSOM journey")
+
+Browser using CSSOM determines which element will have what styling affect, thanks to **CASCADE**
