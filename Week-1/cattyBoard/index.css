@@ -1,6 +1,9 @@
 .main{
     display: flex;
 }
+section{
+    width: 100%;
+}
 header{
     display: flex;
     background-color: rgb(74, 74, 74);
@@ -12,14 +15,30 @@ img{
     margin: 30px;
 }
 
+#songName{
+    color: white;
+    padding-right: 20px;
+}
+
+#songName i{
+    font-size: 10px;
+}
+
+#songName p{
+    margin-top: 60px;
+}
+
+#songName span{
+    margin: 0 20px;
+}
 #nav{
     width: 40px;
-    height: 650px;
-    background-color: rgb(211, 225, 232);
+    height: 100%;
+    background-color: rgb(197, 197, 197);
 
 }
 
 i{
-    margin: 30px 1px;
+    margin: 40px 6px;
     font-size: 22px;
 }
