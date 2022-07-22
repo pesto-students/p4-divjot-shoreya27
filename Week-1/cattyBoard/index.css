@@ -42,3 +42,24 @@ i{
     margin: 40px 6px;
     font-size: 22px;
 }
+
+article{
+    height: 70%;
+    width: 100%;
+}
+table{
+    width: 100%;
+    margin-left: 3px;    
+}
+
+tr{
+    height: 50px;
+
+}
+
+tr:nth-child(2n){
+    background-color:rgb(197, 197, 197);
+}
+td{
+    padding-left: 10px;
+}
