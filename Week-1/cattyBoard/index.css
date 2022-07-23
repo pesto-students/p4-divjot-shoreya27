@@ -1,5 +1,6 @@
 .main{
     display: flex;
+    margin: 0px 0px;
 }
 section{
     width: 100%;
@@ -33,14 +34,14 @@ img{
 }
 #nav{
     width: 40px;
-    height: 680px;
+    height: 600px;
     background-color: rgb(197, 197, 197);
 
 }
 
 nav i{
-    margin: 32px 6px;
-    font-size: 20px;
+    margin: 28px 6px;
+    font-size: 16px;
 }
 
 article{
@@ -70,7 +71,7 @@ td{
 }
 footer{ 
     background-color: rgb(102, 119, 172);
-    height : 150px;
+    height : 132px;
     display: flex;
 }
 
@@ -93,6 +94,7 @@ footer div p{
 }
 
 #footerDiv2{
+    height: 100%;
     width: calc(100% - 30%);
     margin: 60px 0px;
 }
