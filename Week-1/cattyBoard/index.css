@@ -63,3 +63,7 @@ tr:nth-child(2n){
 td{
     padding-left: 10px;
 }
+
+.cloud{
+    border: 2px solid black;
+}
