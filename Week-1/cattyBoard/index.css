@@ -44,12 +44,13 @@ i{
 }
 
 article{
-    height: 70%;
+    height: calc(100% - 299px);
     width: 100%;
 }
 table{
     width: 100%;
-    margin-left: 3px;    
+    margin-left: 3px;
+    border-spacing: 0px;  
 }
 
 tr{
@@ -66,4 +67,26 @@ td{
 
 .cloud{
     border: 2px solid black;
+}
+footer{ 
+    background-color: rgb(72 111 255);
+    height : 150px;
+}
+
+#footerDiv1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+
+footer div img{
+    height: 100px;
+    width: 100px;
+    margin: 25px 10px;
+    
+}
+
+footer div p{
+    color: white;
+    margin-top: 40px;
 }
