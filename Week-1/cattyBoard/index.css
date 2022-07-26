@@ -1,0 +1,106 @@
+.main{
+    display: flex;
+    margin: 0px 0px;
+}
+section{
+    width: 100%;
+}
+header{
+    display: flex;
+    background-color: rgb(74, 74, 74);
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+}
+
+#songName{
+    color: white;
+    padding-right: 20px;
+}
+
+#songName i{
+    font-size: 10px;
+}
+
+#songName p{
+    margin-top: 60px;
+}
+
+#songName span{
+    margin: 0 20px;
+}
+#nav{
+    width: 40px;
+    height: 600px;
+    background-color: rgb(197, 197, 197);
+
+}
+
+nav i{
+    margin: 28px 6px;
+    font-size: 16px;
+}
+
+article{
+    height: calc(100% - 299px);
+    width: 100%;
+}
+table{
+    width: 100%;
+    margin-left: 3px;
+    border-spacing: 0px;  
+}
+
+tr{
+    height: 50px;
+
+}
+
+tr:nth-child(2n){
+    background-color:rgb(197, 197, 197);
+}
+td{
+    padding-left: 10px;
+}
+
+.cloud{
+    border: 2px solid black;
+}
+footer{ 
+    background-color: rgb(102, 119, 172);
+    height : 132px;
+    display: flex;
+}
+
+#footerDiv1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+
+footer div img{
+    height: 100px;
+    width: 100px;
+    margin: 25px 10px;
+    
+}
+
+footer div p{
+    color: white;
+    margin-top: 40px;
+}
+
+#footerDiv2{
+    height: 100%;
+    width: calc(100% - 30%);
+    margin: 60px 0px;
+}
+
+footer span{
+    color: white;
+    margin: 0px 90px;
+
+}
