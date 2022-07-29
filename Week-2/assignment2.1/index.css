@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+header{
+    padding: 1em;
+    width: 100vw;
+    height: 20vh;
+    background-color: #0F3D3E;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+header p{
+    margin-top: 10px;
+}
