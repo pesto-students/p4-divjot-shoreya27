@@ -1,16 +1,42 @@
 *{
-    margin: 0;
+    box-sizing: border-box;
+    background-color: #D1512D;
+    color: #F5E8E4;
 }
 
 header{
     padding: 1em;
-    width: 100vw;
-    height: 20vh;
-    background-color: #0F3D3E;
-    color: #F1F1F1;
     text-align: center;
 }
 
-header p{
-    margin-top: 10px;
+header h1 span{
+    font-size: 1.5em; 
+    border-bottom: 2px dashed #F1F1F1 ;
+    color: #411530;
 }
+
+header p{
+    margin-top: 30px;
+}
+
+article{
+    display: flex;
+    padding: 10px 10px;
+    border-top: 1px solid #F8F9D7;
+    justify-content: space-between;
+}
+img{
+    height: 300px;
+    width:400px;
+    border: 1px solid #411530;
+}
+
+.detail{
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.detail h2{
+    color: #411530;
+}
+
