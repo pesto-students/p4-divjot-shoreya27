@@ -62,3 +62,23 @@ button{
     color: #D1512D;
     background-color: whitesmoke;
 }
+
+footer{
+    display: flex;
+    margin-top: 20px;
+    background-color: #411530;
+}
+
+footer img{
+    height: 200px;
+    width: 200px;
+}
+
+.developer{
+    margin: 20px 10px;
+    background-color: #411530;
+}
+
+.developer p{
+    background-color: white; color:#411530;
+}
