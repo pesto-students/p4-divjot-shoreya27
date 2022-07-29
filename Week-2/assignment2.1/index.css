@@ -40,3 +40,25 @@ img{
     color: #411530;
 }
 
+.form{
+    font-size: 2em;
+}
+
+label{  
+    margin-bottom: 15px;
+}
+
+input{
+    margin: 5px 5px;
+    color: white;
+    border: 2px solid wheat;
+}
+
+button{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    color: #D1512D;
+    background-color: whitesmoke;
+}
