@@ -1,4 +1,4 @@
-*{
+body{
     box-sizing: border-box;
     background-color: #D1512D;
     color: #F5E8E4;
@@ -82,3 +82,22 @@ footer img{
 .developer p{
     background-color: white; color:#411530;
 }
+@media screen and (max-width: 700px) {
+   article{
+    flex-wrap: wrap;
+    padding: 10px 0px;
+
+   }
+   img{
+    width:400px;
+}
+   footer{
+    flex-wrap: wrap;
+   }
+  }
+
+  @media screen and (max-width: 400px) {
+    img{
+        width:340px;
+    }
+  }
