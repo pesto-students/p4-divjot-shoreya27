@@ -1,6 +1,20 @@
+h1{
+    text-align: center;
+}
+
 section{
     display: flex;
     justify-content: center;
+}
+
+section.a{
+    position: relative;
+    top: 32px;
+}
+
+section.b{
+    position: relative;
+    bottom: 50px;
 }
 
 div{
