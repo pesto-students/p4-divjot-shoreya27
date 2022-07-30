@@ -1,0 +1,23 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+}
+
+#one{
+    background-color: lightblue;
+}
+#two{
+    background-color: lightsalmon;
+}
+#three{
+    background-color: lightseagreen;
+    
+}
+#four{
+    background-color: lightcoral;
+}
