@@ -31,3 +31,6 @@ function sortArr(arr){
 }
 
 sortArr([0,1,1,0,2,0,0,1])
+
+//time complexity: O(N)
+//space complexity: O(N)
