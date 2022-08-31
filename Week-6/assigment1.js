@@ -21,3 +21,6 @@ const val = maxSum(array)
 const val2 = maxSum(array2)
 console.log(val)
 console.log(val2)
+
+//time complexity: O(N^2)
+//space complexity: O(N)
