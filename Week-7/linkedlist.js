@@ -37,10 +37,23 @@ class LinkedList{
         }
         console.log(str)
     }
+
+    createLoop(pos){
+        let curr = this.head
+        let posEle = this.head
+        while(curr.next!==null){
+            curr = curr.next
+        }
+        while(pos>1){
+            posEle=posEle.next
+            pos-=1;
+        }
+        curr.next = posEle
+    }
 }
 
-let list = new LinkedList();
-let list2 = new LinkedList();
+// let list = new LinkedList();
+// let list2 = new LinkedList();
 // list.addElement(5)
 // list.addElement(10)
 // list.addElement(15)
@@ -54,5 +67,7 @@ let list2 = new LinkedList();
 // list.traverseList()
 // console.log("List2:")
 // list2.traverseList()
-
+// console.log("create loop with ele at pos 3")
+// list2.createLoop(3)
+// list2.traverseList()
 module.exports.LinkedList = LinkedList
