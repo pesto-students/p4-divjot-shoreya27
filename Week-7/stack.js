@@ -18,6 +18,10 @@ class Stack{
     display(){
         console.log(this.arr)
     }
+
+    top(){
+        return this.arr[this.arr.length-1]
+    }
 }
 
 // let st = new Stack()
