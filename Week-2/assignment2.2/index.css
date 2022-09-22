@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: #94B49F;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section.a{
+    position: relative;
+    top: 32px;
+}
+
+section.b{
+    position: relative;
+    bottom: 50px;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+}
+
+#one{
+    background-color: lightblue;
+    transition: transform , 1s
+}
+#two{
+    background-color: lightsalmon;
+    transition: transform , 1s
+}
+
+#three{
+    background-color: lightseagreen;
+    transition: transform , 1s
+    
+}
+
+#four{
+    background-color: lightcoral;
+    transition: transform , 1s
+}
+main:hover #one{
+    transform:  translate(-100px) rotate(90deg);
+    
+}
+main:hover #two{
+    transform:  translate(100px) rotate(-90deg);
+}
+main:hover #three{
+    transform:  translate(-100px) rotate(-90deg);
+}
+main:hover #four{
+    transform:  translate(100px) rotate(90deg);
+}
